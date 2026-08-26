@@ -258,39 +258,4 @@ cp SKILL.md ~/.cursor/skills/commit-plan-only/
 
 ---
 
-## 6. 배포·유지보수
-
-### 배포 전 체크리스트
-
-1. GitHub에 `commit-plan-only` (또는 원하는 이름) 레포 생성 후 이 폴더를 연결
-2. frontmatter `name: commit-plan-only` 유지
-3. `SKILL.md`에 사내 전용 경로·비밀이 없는지 점검
-4. 로컬 `split-commits` ↔ 이 레포 `SKILL.md` 동기화 정책 정하기
-5. (선택) LICENSE (공개 시 MIT 등)
-
-### GitHub에 올리는 예
-
-```bash
-cd ~/Desktop/commit-plan-only   # 또는 이 폴더 경로
-git add .
-git commit -m "$(cat <<'EOF'
-Initial commit: commit-plan-only skill
-
-EOF
-)"
-git remote add origin git@github.com:<your-user>/commit-plan-only.git
-git branch -M main
-git push -u origin main
-```
-
-Cursor / GitHub UI의 “Publish Repository”로 올려도 됩니다.
-
-### 에이전트가 잘 타게 하려면
-
-- `description`에 트리거 문구를 넉넉히 (`commit plan`, `커밋 쪼개기`, …)
-- Soft rules만 두지 말고 **Hard rules**로 add/commit 금지를 명시 (현재 `SKILL.md` 그대로)
-- Output template을 고정해 복붙 품질을 안정화
-
----
-
 커밋·푸시는 이 가이드를 보고 **직접** 하시면 됩니다.
