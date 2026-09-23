@@ -258,8 +258,6 @@ cp SKILL.md ~/.cursor/skills/commit-plan-only/
 
 ---
 
-<<<<<<< Updated upstream
-=======
 ## 6. 배포·유지보수
 
 ### 배포 전 체크리스트
@@ -295,5 +293,4 @@ Cursor / GitHub UI의 “Publish Repository”로 올려도 됩니다.
 
 ---
 
->>>>>>> Stashed changes
 커밋·푸시는 이 가이드를 보고 **직접** 하시면 됩니다.
